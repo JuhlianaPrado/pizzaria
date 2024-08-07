@@ -12,16 +12,16 @@ public class PizzariaApplication {
 		SpringApplication.run(PizzariaApplication.class, args);
 
 		Produto p = new Produto();
-		// p.precoCompra = -45.00; // Agora o acesso é privado
-		//System.out.println("Preço de compra " + p.precoCompra);
+		// p.precoCompra = -45.00;  // Agora o acesso é privado
+		// System.out.println("Preço de compra " + p.precoCompra);
 
 		//p.setPrecoCompra(-56.00);
 		//System.out.println("Preço de compra " + p.getPrecoCompra());
 
-        p.setNome("Pizza de calabreza tamanho G");
+		p.setNome("Pizza de Calabreza tamanho G");
 		p.setPrecoCompra(-56.00);
 
-		if(!p.validarProduto()){
+		if(!p.validarProduto()) {
 			System.out.println(p.getMensagemErro());
 		}
 
